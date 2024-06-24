@@ -12,7 +12,7 @@ const LoginForm = ({ switchToSignUp }) => {
 
   const handleSubmit=(e)=>{
     e.preventDefault()
-    axios.post('http://localhost:5173/login',{email,password})
+    axios.post('https://recipe-finder-yy9r.onrender.com/login',{email,password})
     .then(res=> {
       console.log('login.js',res)
       if (res.data === 'Success')
