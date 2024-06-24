@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+/* grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); */
+
+.App{
+  text-align: center;
+  font-family: 'Nunito';
+  background-color:  #c4c2c2b3 ;
+  min-height: 100vh;
+}
+.srchbar{
+  padding: 16px;
+  font-size: 17px;
+  border-radius: 6px;
+  margin-right: 10px;
+  margin-bottom: 30px;
+  border: 1px solid black;
+  width: 20%;
+}
+.srchbtn{
+  padding: 16px;
+  font-size: 17px;
+  background-color: black;
+  color: white;
+  border-radius: 21px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+#placeholder{
+  padding: 20px;
+  font-size: 18px;
+}
+.logo .imge{
+  height: 50px;
+  width: 60px;
+  border-radius: 20%;
+}
+.logo .lgtxt{
+  color: black;
+}
+.grid{
+  display: grid;
+  gap: 30px 10px;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+}
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.logbtn{
+  position:absolute;
+  right: 5%;
+  top: 10%;
+  color: black;
+}
+.card-content{
+  margin-left: 30px;
+  border: 1px solid black;
+  border-radius: 20px;
+  text-align: center;
+  height: 425px;
+  width: 350px;
+  background-color: white;
+}
+.card-content img{
+  width: 350px;
+  height: 230px;
+  border-top-left-radius: 20px; /* Adjust the value as needed */
+    border-top-right-radius: 20px;
+}
+.viewbtn{
+  padding: 14px;
+  font-size: 17px;
+  color: white;
+  background-color: black;
+  border-radius: 25px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+.viewbtn:hover{
+  background-color: #151414ce;
+}
+@media screen and (max-width:700px){
+  .card-content{
+    margin-left: 40px;
+    height: 360px;
+    width: 300px;
+  }
+  .card-content img{
+    width: 350px;
+    height: 200px;
+  }
+}
