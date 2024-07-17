@@ -12,7 +12,7 @@ const SignUpForm = ({ switchToLogin }) => {
 
   const handleSubmit=(e)=>{
     e.preventDefault()
-    axios.post('http://localhost:5173/signup', {name,email,password})
+    axios.post('https://recipe-finder-b5cz.onrender.com/signup', {name,email,password})
     .then(res => {
       console.log('signup.js',res)
       if (res.data === 'Exists'){
